@@ -1,0 +1,237 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+/*BODY GENERAL*/
+body
+{
+    /* Este patron se toma de la pagina freefronted REf:https://freefrontend.com/css-background-patterns/*/
+    background: 
+    radial-gradient(black 3px, transparent 4px),
+    radial-gradient(black 3px, transparent 4px),
+    linear-gradient(#fff 4px, transparent 0),
+    linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+    linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+    #fff;
+    background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+
+    /*css fuenete poppins*/ 
+   font-family: 'Poppins', sans-serif;
+}
+
+
+.mapi
+{
+    width: 100%;
+}
+
+/*HEDER*/
+.logo h1
+{
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2.9em;
+    color: rgb(117, 91, 61);
+    font-family: 'Alfa Slab One', cursive;
+    
+}
+.logo img
+{
+    border-radius: 40%;
+}
+
+/*CONTENIDO*/
+.contenedor
+{
+    background: #EFF8FB;
+    width: 90%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+/*NAVEGADOR PRINCIPAL*/
+.contenedor > .naveuno
+{
+    grid-column: 1/7;
+  
+}
+
+.naveuno 
+{
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(5, 1fr);
+    
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+
+}
+ .naveuno div > a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.naveuno > div
+{
+    background: #3b4a55;
+    height: 100px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+  
+}
+
+.naveuno :hover
+{
+    cursor: pointer;
+    color: #000000;
+    background: #cccccc;
+    transition: all 0.5s ease;
+    border-radius: 15px;
+}
+
+
+/*GUIA PARA MODIFICAR */
+.contenedor > .logo,
+.contenedor > .naveuno,
+.contenedor > .servicios,
+.contenedor > .contenido,
+.contenedor > .footer
+.contenedor > div
+{
+    background: #fff;
+    padding: -10px;
+    border: 0px solid black;
+}
+
+/*DIVICIONES GRILLA*/
+.contenedor .logo ,
+.contenedor .footer
+{
+    grid-column: 1/7;
+    background:radial-gradient(1.5em 6.28571em at 1.95em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(1.5em 6.28571em at -0.45em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 1.5em 5.5em, radial-gradient(2.3em 4.57143em at 2.99em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(2.3em 4.57143em at -0.69em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 2.3em 4em, radial-gradient(3.5em 6.28571em at 4.55em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(3.5em 6.28571em at -1.05em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 3.5em 5.5em, radial-gradient(#15ffa5, #00ced1);
+    background-color: mediumspringgreen;
+    background-size: 1.5em 11em, 1.5em 11em, 2.3em 8em, 2.3em 8em, 3.5em 11em, 3.5em 11em, 100% 100%;
+    background-repeat: repeat;
+    color: #EFF8FB;
+    padding: 3em;
+
+}
+
+/*NAVEGADOR SECUNDARIO*/
+.contenedor > .servicios
+{
+    grid-column: span 1;
+    background:#F2F2F2;
+    color: black;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 5px;
+   
+}
+
+.servicios div a, 
+.servicios div img, 
+.servicios div p
+{
+    background: #cccccc;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.servicios h1
+{
+    text-align: center;
+    font-weight: 3000;
+    background:radial-gradient(1.5em 6.28571em at 1.95em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(1.5em 6.28571em at -0.45em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 1.5em 5.5em, radial-gradient(2.3em 4.57143em at 2.99em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(2.3em 4.57143em at -0.69em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 2.3em 4em, radial-gradient(3.5em 6.28571em at 4.55em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(3.5em 6.28571em at -1.05em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 3.5em 5.5em, radial-gradient(#15ffa5, #00ced1);
+    background-color: mediumspringgreen;
+    background-size: 1.5em 11em, 1.5em 11em, 2.3em 8em, 2.3em 8em, 3.5em 11em, 3.5em 11em, 100% 100%;
+    background-repeat: repeat ;
+    color: rgb(117, 91, 61);
+}
+
+
+/**ARTICULO*/
+.contenido > .articulo
+{
+    background: #808e9b;
+    padding: 20px;
+    margin-top: 5px;
+    color: #dfe6e9;    
+}
+
+.contenido .articulo h1,
+.contenido .articulo p
+{
+    padding: 20px;
+}
+
+.contenedor > .contenido
+{
+    grid-column: span 3;
+    
+}
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 768px)
+{
+    body 
+    {
+        background:radial-gradient(1.5em 6.28571em at 1.95em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(1.5em 6.28571em at -0.45em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 1.5em 5.5em, radial-gradient(2.3em 4.57143em at 2.99em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(2.3em 4.57143em at -0.69em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 2.3em 4em, radial-gradient(3.5em 6.28571em at 4.55em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(3.5em 6.28571em at -1.05em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 3.5em 5.5em, radial-gradient(#15ffa5, #00ced1);
+        background-color: mediumspringgreen;
+        background-size: 1.5em 11em, 1.5em 11em, 2.3em 8em, 2.3em 8em, 3.5em 11em, 3.5em 11em, 100% 100%;
+        background-repeat: repeat ;
+    }
+    .logo
+    {
+        text-align: center;
+    }
+
+    .contenedor .contenido
+    {
+        grid-column: 1/-1;
+    }
+    .contenedor .naveuno div
+    {
+        grid-column: 1/-1;
+    }
+
+    .contenedor .servicios
+    {
+        grid-column: 1/-1;
+    }
+    .servicios div img
+    {
+        grid-column: 1/-1;
+        text-align: center;
+        border-radius: 15px;
+        width: 100%;
+       
+        
+    }
+    .logo img
+    {
+        border-radius: 40%;
+        width: 80%;
+
+    }
+}
+
+
